@@ -1,0 +1,83 @@
+{
+  "sources": [
+    {
+      "attribution": "Attribute as 'U.S. Department of Defense' with link to the original article.",
+      "categories": [
+        "United States Defense",
+        "Global Military News"
+      ],
+      "enabled": true,
+      "name": "U.S. Department of Defense",
+      "notes": "Official U.S. Department of War news feed (formerly defense.gov). Primary source; prefer for US defense stories.",
+      "reliability": "official",
+      "type": "rss",
+      "url": "https://www.war.gov/DesktopModules/ArticleCS/RSS.ashx?ContentType=1"
+    },
+    {
+      "attribution": "Attribute as 'Breaking Defense' with link to the original article.",
+      "categories": [
+        "Defense Industry and Procurement",
+        "Defense Technology",
+        "Global Military News"
+      ],
+      "enabled": true,
+      "name": "Breaking Defense",
+      "notes": "Reputable defense industry publication. Good for procurement and technology stories.",
+      "reliability": "high",
+      "type": "rss",
+      "url": "https://breakingdefense.com/feed/"
+    },
+    {
+      "attribution": "Attribute as 'The War Zone' with link to the original article.",
+      "categories": [
+        "Military Aviation",
+        "Defense Technology",
+        "Defense Analysis"
+      ],
+      "enabled": true,
+      "name": "The War Zone",
+      "notes": "Defense analysis publication with strong aviation and technology coverage.",
+      "reliability": "high",
+      "type": "rss",
+      "url": "https://www.twz.com/feed"
+    },
+    {
+      "attribution": "Attribute as 'Naval News' with link to the original article.",
+      "categories": [
+        "Naval Warfare and Maritime Security"
+      ],
+      "enabled": true,
+      "name": "Naval News",
+      "notes": "Specialized naval defense publication.",
+      "reliability": "high",
+      "type": "rss",
+      "url": "https://www.navalnews.com/feed/"
+    },
+    {
+      "attribution": "Attribute as 'Army Technology' with link to the original article.",
+      "categories": [
+        "Ground Forces and Armored Vehicles",
+        "Defense Industry and Procurement"
+      ],
+      "enabled": true,
+      "name": "Army Technology",
+      "notes": "Defense industry publication focused on land systems.",
+      "reliability": "medium-high",
+      "type": "rss",
+      "url": "https://www.army-technology.com/feed/"
+    },
+    {
+      "attribution": "Attribute as 'Defense News' with link to the original article.",
+      "categories": [
+        "Global Military News",
+        "Defense Industry and Procurement"
+      ],
+      "enabled": true,
+      "name": "Defense News",
+      "notes": "Established defense trade publication.",
+      "reliability": "high",
+      "type": "rss",
+      "url": "https://www.defensenews.com/arc/outboundfeeds/rss/"
+    }
+  ]
+}

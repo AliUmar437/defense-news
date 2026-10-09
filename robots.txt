@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://AliUmar437.github.io/defense-news/sitemap.xml

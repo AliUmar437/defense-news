@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Defense News — International military, defense, and security news</title>
+<meta name="description" content="Timely, source-attributed coverage of global military developments, defense technology, military aviation, naval forces, and international security.">
+<link rel="canonical" href="https://AliUmar437.github.io/defense-news/">
+<meta property="og:title" content="Defense News">
+<meta property="og:description" content="International military, defense, and security news.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://AliUmar437.github.io/defense-news/">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-top">
+    <div>
+      <a class="logo" href="index.html">DEFENSE <span>NEWS</span></a>
+      <div class="tagline">Military &middot; Defense &middot; Security</div>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle navigation">MENU</button>
+  </div>
+  <nav class="main-nav" aria-label="Main navigation">
+    <div class="wrap">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="#latest">Latest</a></li>
+        <li><a href="#sections">Aviation</a></li>
+        <li><a href="#sections">Naval</a></li>
+        <li><a href="#sections">Ground Forces</a></li>
+        <li><a href="#sections">Missiles</a></li>
+        <li><a href="#sections">Drones</a></li>
+        <li><a href="pages/about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<div class="ticker" role="marquee" aria-label="Breaking news">
+  <div class="ticker-label">BREAKING</div>
+  <div class="ticker-track" id="ticker-track"><span>Loading latest headlines…</span></div>
+</div>
+
+<main class="wrap">
+
+  <section class="hero" aria-label="Featured story">
+    <div class="featured" id="featured"><div class="empty">Loading…</div></div>
+  </section>
+
+  <div class="toolbar" role="search">
+    <input type="search" id="search" placeholder="Search headlines and summaries…" aria-label="Search articles">
+    <select id="filter-category" aria-label="Filter by category"><option value="">All categories</option></select>
+    <select id="filter-region" aria-label="Filter by region"><option value="">All regions</option></select>
+    <span id="result-count" class="meta"></span>
+  </div>
+
+  <section class="section" id="latest" aria-label="Latest defense news">
+    <div class="section-head">Latest Defense News</div>
+    <div class="cards" id="latest-grid"><div class="empty">Loading…</div></div>
+    <div class="loadmore"><button class="btn" id="load-more" style="display:none">Load more</button></div>
+  </section>
+
+  <div id="sections"><div id="category-sections"></div></div>
+
+  <section class="newsletter" aria-label="Newsletter">
+    <div>
+      <h3>The Defense Brief — Newsletter</h3>
+      <p>Top defense stories in your inbox. Integration coming soon.</p>
+    </div>
+    <form id="newsletter-form">
+      <input type="email" placeholder="Email address" aria-label="Email address" required>
+      <button class="btn btn-red" type="submit">Subscribe</button>
+    </form>
+    <p id="newsletter-msg" class="meta" role="status"></p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <h4>Defense News</h4>
+      <p style="font-size:.88rem">Timely, source-attributed coverage of global military developments, defense technology, and international security.</p>
+    </div>
+    <div>
+      <h4>Sections</h4>
+      <ul>
+        <li><a href="#latest">Latest News</a></li>
+        <li><a href="#sections">Military Aviation</a></li>
+        <li><a href="#sections">Naval Forces</a></li>
+        <li><a href="#sections">Ground Forces</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Editorial</h4>
+      <ul>
+        <li><a href="pages/about.html">About Us</a></li>
+        <li><a href="pages/editorial-policy.html">Editorial Policy</a></li>
+        <li><a href="pages/corrections.html">Corrections Policy</a></li>
+        <li><a href="pages/sources.html">Source &amp; Attribution Policy</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="pages/privacy.html">Privacy Policy</a></li>
+        <li><a href="pages/terms.html">Terms of Use</a></li>
+        <li><a href="pages/contact.html">Contact</a></li>
+        <li><a href="rss.xml">RSS Feed</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>&copy; <span id="year"></span> Defense News. All rights reserved.</span>
+    <span>AI may assist with news processing and drafting. See Editorial Policy.</span>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
