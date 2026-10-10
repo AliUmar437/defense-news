@@ -92,7 +92,7 @@ ARTICLE_TEMPLATE = """<!DOCTYPE html>
 <div class="article-body">
 <span class="kicker">{category}</span>
 <h1>{title}</h1>
-<div class="byline"><span>By {author}</span><span>{published_fmt}</span>
+<div class="byline"><span>{author}</span><span>{published_fmt}</span>
 <span>{read_time} min read</span><span>Region: {region}</span></div>
 <div class="prose">{body}</div>
 <div class="source-box"><strong>Source:</strong> {source_name}<br>
