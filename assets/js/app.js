@@ -170,7 +170,20 @@
     if (t && nav) {
       t.addEventListener('click', function () { nav.classList.toggle('open'); });
       nav.querySelectorAll('a').forEach(function (a) {
-        a.addEventListener('click', function () { nav.classList.remove('open'); });
+        a.addEventListener('click', function () {
+          nav.classList.remove('open');
+          var href = a.getAttribute('href') || '';
+          if (href.charAt(0) === '#') {
+            var target = document.getElementById(href.slice(1));
+            if (target) {
+              setTimeout(function () {
+                target.classList.remove('flash');
+                void target.offsetWidth;
+                target.classList.add('flash');
+              }, 350);
+            }
+          }
+        });
       });
     }
   }
