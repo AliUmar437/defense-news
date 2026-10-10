@@ -28,7 +28,8 @@
   "breaking": true,
   "status": "published",
   "verificationStatus": "single-source",
-  "contentType": "news"
+  "contentType": "news",
+  "imageCreditUrl": "https://breakingdefense.com/2026/10/pentagon-raytheon-ink-up-to-6-3-billion-multi-year-contract-for-sm-3-ib-missiles"
  },
  {
   "id": "n0002",
@@ -59,7 +60,8 @@
   "breaking": true,
   "status": "published",
   "verificationStatus": "single-source",
-  "contentType": "news"
+  "contentType": "news",
+  "imageCreditUrl": "https://www.twz.com/air/boeing-wins-f-a-xx-next-generation-navy-stealth-fighter-contract"
  },
  {
   "id": "n0003",
@@ -89,7 +91,8 @@
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
-  "contentType": "news"
+  "contentType": "news",
+  "imageCreditUrl": "https://www.twz.com/air/taiwans-first-f-16-block-70s-have-finally-arrived"
  },
  {
   "id": "n0004",
@@ -119,7 +122,8 @@
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
-  "contentType": "news"
+  "contentType": "news",
+  "imageCreditUrl": "https://www.twz.com/air/first-release-of-usafs-new-hacm-hypersonic-cruise-missile-has-happened-over-a-test-range-in-australia"
  },
  {
   "id": "n0005",
@@ -149,7 +153,8 @@
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
-  "contentType": "news"
+  "contentType": "news",
+  "imageCreditUrl": "https://www.navalnews.com/naval-news/2026/10/anduril-u-s-navy-invest-6-6-billion-to-expand-americas-submarine-industrial-base"
  },
  {
   "id": "n0006",
@@ -179,7 +184,8 @@
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
-  "contentType": "news"
+  "contentType": "news",
+  "imageCreditUrl": "https://www.twz.com/sea/navy-orders-30-drone-ships-to-finally-advance-its-medium-uncrewed-vessel-ambitions"
  },
  {
   "id": "n0007",
@@ -209,7 +215,8 @@
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
-  "contentType": "news"
+  "contentType": "news",
+  "imageCreditUrl": "https://breakingdefense.com/2026/10/swedish-government-launches-first-patriot-mission-to-poland"
  },
  {
   "id": "n0008",
@@ -239,7 +246,8 @@
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
-  "contentType": "news"
+  "contentType": "news",
+  "imageCreditUrl": "https://breakingdefense.com/2026/10/pentagon-lockheed-weigh-multi-year-f-35-production-sustainment-deal"
  },
  {
   "id": "n0009",
@@ -269,7 +277,8 @@
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
-  "contentType": "news"
+  "contentType": "news",
+  "imageCreditUrl": "https://breakingdefense.com/2026/10/gdls-exec-new-loitering-munitions-platform-to-be-delivered-to-army-by-end-of-month"
  },
  {
   "id": "n0010",
@@ -299,7 +308,8 @@
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
-  "contentType": "news"
+  "contentType": "news",
+  "imageCreditUrl": "https://www.army-technology.com/news/australia-himars-second-tranche"
  },
  {
   "id": "n0011",
@@ -329,7 +339,8 @@
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
-  "contentType": "news"
+  "contentType": "news",
+  "imageCreditUrl": "https://breakingdefense.com/2026/10/could-germany-join-gcap-uk-seeks-to-progress-the-potential-switch"
  },
  {
   "id": "n0012",
@@ -359,7 +370,8 @@
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
-  "contentType": "news"
+  "contentType": "news",
+  "imageCreditUrl": "https://breakingdefense.com/2026/10/lessons-for-centcom-from-counter-drone-experiments-in-the-arizona-desert"
  },
  {
   "id": "n0013",
@@ -389,7 +401,8 @@
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
-  "contentType": "news"
+  "contentType": "news",
+  "imageCreditUrl": "https://breakingdefense.com/2026/10/new-leaders-new-drone-command-what-we-expect-from-ausa-2026"
  },
  {
   "id": "n0014",
@@ -449,7 +462,8 @@
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
-  "contentType": "news"
+  "contentType": "news",
+  "imageCreditUrl": "https://breakingdefense.com/2026/10/zero-trust-gets-harder-when-every-user-device-weapon-and-ai-agent-needs-an-identity"
  },
  {
   "id": "n0016",
@@ -480,7 +494,8 @@
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
-  "contentType": "news"
+  "contentType": "news",
+  "imageCreditUrl": "https://www.seaforces.org/usnships/ddg/DDG-128-USS-Ted-Stevens.htm"
  },
  {
   "id": "n0017",
@@ -540,7 +555,8 @@
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
-  "contentType": "news"
+  "contentType": "news",
+  "imageCreditUrl": "https://www.dvidshub.net/image/7096205/f-16s-soar-across-alaskan-skies"
  },
  {
   "id": "n0019",
@@ -571,7 +587,8 @@
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
-  "contentType": "news"
+  "contentType": "news",
+  "imageCreditUrl": "https://www.twz.com/air/b-52-to-get-stealthy-agm-158c-long-range-anti-ship-missiles"
  },
  {
   "id": "n0020",
@@ -601,7 +618,8 @@
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
-  "contentType": "news"
+  "contentType": "news",
+  "imageCreditUrl": "https://www.twz.com/air/u-s-makes-f-35-push-as-portugal-weighs-f-16-replacement"
  },
  {
   "id": "n0021",
@@ -631,7 +649,8 @@
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
-  "contentType": "news"
+  "contentType": "news",
+  "imageCreditUrl": "https://www.twz.com/news-features/navy-doubles-down-on-x-bat-vtol-fighter-drone-development"
  },
  {
   "id": "n0022",
@@ -661,7 +680,8 @@
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
-  "contentType": "news"
+  "contentType": "news",
+  "imageCreditUrl": "https://www.twz.com/land/blackbeard-hypersonic-missile-shown-being-fired-from-ground-launcher"
  },
  {
   "id": "n0023",
@@ -691,7 +711,8 @@
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
-  "contentType": "news"
+  "contentType": "news",
+  "imageCreditUrl": "https://www.twz.com/sea/where-are-the-aircraft-carriers-october-6-2026"
  },
  {
   "id": "n0024",
@@ -721,7 +742,8 @@
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
-  "contentType": "news"
+  "contentType": "news",
+  "imageCreditUrl": "https://www.twz.com/air/first-f-16-block-72-has-flown"
  },
  {
   "id": "n0025",
@@ -751,7 +773,8 @@
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
-  "contentType": "news"
+  "contentType": "news",
+  "imageCreditUrl": "https://www.twz.com/air/northrop-grummans-talon-blue-collaborative-combat-aircraft-has-flown"
  },
  {
   "id": "n0026",
@@ -781,7 +804,8 @@
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
-  "contentType": "news"
+  "contentType": "news",
+  "imageCreditUrl": "https://www.twz.com/air/b-1b-bombers-make-hasty-departure-from-england"
  },
  {
   "id": "n0027",
@@ -811,7 +835,8 @@
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
-  "contentType": "news"
+  "contentType": "news",
+  "imageCreditUrl": "https://breakingdefense.com/2026/10/coast-guard-places-248-million-order-for-first-mq-9b-drones"
  },
  {
   "id": "n0028",
@@ -841,7 +866,8 @@
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
-  "contentType": "news"
+  "contentType": "news",
+  "imageCreditUrl": "https://breakingdefense.com/2026/10/lockheed-unveils-pac-3-edge-its-next-gen-patriot-interceptor"
  },
  {
   "id": "n0029",
@@ -871,7 +897,8 @@
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
-  "contentType": "news"
+  "contentType": "news",
+  "imageCreditUrl": "https://breakingdefense.com/2026/10/hanwha-sets-sights-on-armys-tracked-howitzer-program-after-victory-in-wheeled-competition"
  },
  {
   "id": "n0030",
@@ -1081,7 +1108,8 @@
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
-  "contentType": "news"
+  "contentType": "news",
+  "imageCreditUrl": "https://www.dvidshub.net/image/5745289/f-35a-lightning-ii"
  },
  {
   "id": "n0037",
@@ -1111,7 +1139,8 @@
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
-  "contentType": "news"
+  "contentType": "news",
+  "imageCreditUrl": "https://www.twz.com/air/aim-260-jatm-missile-spotted-on-australian-super-hornet"
  },
  {
   "id": "n0038",
@@ -1141,7 +1170,8 @@
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
-  "contentType": "news"
+  "contentType": "news",
+  "imageCreditUrl": "https://www.twz.com/air/ukraines-f-16-fleet-is-in-a-readiness-crisis"
  },
  {
   "id": "n0039",
@@ -1171,7 +1201,8 @@
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
-  "contentType": "news"
+  "contentType": "news",
+  "imageCreditUrl": "https://www.twz.com/air/all-the-weapons-a-single-navy-fighter-squadron-launched-during-operation-epic-fury"
  },
  {
   "id": "n0040",
@@ -1201,6 +1232,7 @@
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
-  "contentType": "news"
+  "contentType": "news",
+  "imageCreditUrl": "https://www.twz.com/news-features/germany-is-finally-giving-its-f125-frigates-some-more-teeth-with-iris-t-slm-surface-to-air-missiles"
  }
 ]

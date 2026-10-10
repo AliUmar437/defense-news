@@ -95,8 +95,7 @@ ARTICLE_TEMPLATE = """<!DOCTYPE html>
 <div class="byline"><span>{author}</span><span>{published_fmt}</span>
 <span>{read_time} min read</span><span>Region: {region}</span></div>
 <div class="prose">{body}</div>
-<div class="source-box"><strong>Source:</strong> {source_name}<br>
-<a href="{source_url}" rel="noopener" target="_blank">{source_url}</a></div>
+<div class="source-box"><strong>Source:</strong> <a href="{source_url}" rel="noopener" target="_blank">{source_name}</a></div>
 <div class="tags">{tags}</div>
 </div>
 </article>
@@ -133,9 +132,11 @@ def build_article(article, all_articles, cfg):
     url = f"{base}/articles/{article['slug']}.html"
     img = article.get("image") or "assets/img/fallback.svg"
     img_url = img if img.startswith("http") else f"{base}/{img}"
+    credit = esc(article["imageCredit"]) if article.get("imageCredit") else ""
+    if article.get("imageCreditUrl"):
+        credit = f'<a href="{esc(article["imageCreditUrl"])}" rel="noopener" target="_blank">{credit}</a>'
     hero = (f'<img src="../{esc(img)}" alt="{esc(article.get("imageAlt") or article["title"])}">'
-            + (f'<div class="meta">Image: {esc(article["imageCredit"])}</div>'
-               if article.get("imageCredit") else ""))
+            + (f'<div class="meta">Image: {credit}</div>' if credit else ""))
     related = "".join(
         f'<article class="card"><div class="card-body"><div class="cat">{esc(r["category"])}</div>'
         f'<h3><a href="{esc(r["slug"])}.html">{esc(r["title"])}</a></h3>'
