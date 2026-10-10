@@ -1,0 +1,53 @@
+name: Scheduled defense news collection
+
+# Runs the automated news pipeline every 3 hours (UTC).
+# Change the cron schedule in exactly one place: below.
+# GitHub may delay scheduled runs; exact timing is not guaranteed.
+
+on:
+  schedule:
+    - cron: "0 */3 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: news-pipeline
+  cancel-in-progress: false
+
+jobs:
+  collect-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run news pipeline
+        env:
+          AI_API_KEY: ${{ secrets.AI_API_KEY }}
+          AI_API_URL: ${{ secrets.AI_API_URL }}
+          AI_MODEL: ${{ secrets.AI_MODEL }}
+        run: python automation/publish_site.py --max 10
+
+      - name: Commit and push updates
+        run: |
+          git config user.name "defense-news-bot"
+          git config user.email "defense-news-bot@users.noreply.github.com"
+          git add data/articles.json data/processed_items.json data/review_queue.json \
+                  articles/ sitemap.xml rss.xml
+          if git diff --cached --quiet; then
+            echo "No new content — nothing to commit."
+          else
+            git commit -m "Automated news update [skip ci]" \
+              -m "Pipeline run: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            git push
+          fi

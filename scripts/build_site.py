@@ -94,7 +94,6 @@ ARTICLE_TEMPLATE = """<!DOCTYPE html>
 <h1>{title}</h1>
 <div class="byline"><span>By {author}</span><span>{published_fmt}</span>
 <span>{read_time} min read</span><span>Region: {region}</span></div>
-{ai_note}
 <div class="prose">{body}</div>
 <div class="source-box"><strong>Source:</strong> {source_name}<br>
 <a href="{source_url}" rel="noopener" target="_blank">{source_url}</a></div>
@@ -137,10 +136,6 @@ def build_article(article, all_articles, cfg):
     hero = (f'<img src="../{esc(img)}" alt="{esc(article.get("imageAlt") or article["title"])}">'
             + (f'<div class="meta">Image: {esc(article["imageCredit"])}</div>'
                if article.get("imageCredit") else ""))
-    ai_note = ('<div class="ai-note">This article was drafted with AI assistance '
-               'and validated by our editorial pipeline. See our '
-               '<a href="../pages/editorial-policy.html">Editorial Policy</a>.</div>'
-               if article.get("generatedByAI") else "")
     related = "".join(
         f'<article class="card"><div class="card-body"><div class="cat">{esc(r["category"])}</div>'
         f'<h3><a href="{esc(r["slug"])}.html">{esc(r["title"])}</a></h3>'
@@ -175,7 +170,7 @@ def build_article(article, all_articles, cfg):
         published_fmt=esc(pub_fmt),
         read_time=reading_time(article.get("content")),
         region=esc(article.get("region", "")),
-        ai_note=ai_note, body=md_to_html(article.get("content")),
+body=md_to_html(article.get("content")),
         source_name=esc(article.get("sourceName", "")),
         source_url=esc(article.get("sourceUrl", "")),
         tags="".join(f'<span class="tag">{esc(t)}</span>' for t in article.get("tags", [])),
