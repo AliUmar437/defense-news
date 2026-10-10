@@ -40,8 +40,6 @@ img{max-width:100%;display:block}
 .featured-text h1 a:hover{text-decoration:underline}
 .meta{font-size:.8rem;color:#c3cede}
 .featured-side h3,.section-head{font-family:var(--serif);font-size:1.05rem;letter-spacing:.04em;text-transform:uppercase;border-bottom:3px solid var(--red);padding-bottom:8px;margin-bottom:14px}
-@keyframes secflash{0%,60%{background:rgba(200,30,45,.22)}100%{background:transparent}}
-.section.flash{animation:secflash 2.2s ease;border-radius:6px}
 .side-item{display:flex;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
 .side-item img{width:96px;height:68px;object-fit:cover;border-radius:4px;flex:none}
 .side-item h4{font-size:.92rem;line-height:1.4}

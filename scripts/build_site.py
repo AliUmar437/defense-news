@@ -81,9 +81,7 @@ ARTICLE_TEMPLATE = """<!DOCTYPE html>
 <header class="site-header"><div class="wrap header-top">
 <a class="logo" href="../index.html">{site_upper}</a></div>
 <nav class="main-nav"><div class="wrap"><ul>
-<li><a href="../index.html">Home</a></li>
-<li><a href="../index.html#latest">Latest</a></li>
-<li><a href="../pages/about.html">About</a></li>
+{nav}
 </ul></div></nav></header>
 <main class="wrap">
 <div class="breadcrumb"><a href="../index.html">Home</a> / {category} / {short_title}</div>
@@ -177,10 +175,11 @@ body=md_to_html(article.get("content")),
         tags="".join(f'<span class="tag">{esc(t)}</span>' for t in article.get("tags", [])),
         related=related, year=datetime.now(timezone.utc).year,
         jsonld=jsonld.replace("</", "<\\/"),
+        nav=nav_links("../"),
     )
 
 
-def build_sitemap(articles, cfg):
+def build_sitemap(articles, cfg, cats=None):
     base = cfg["production_url"].rstrip("/")
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     urls = [f"  <url><loc>{base}/</loc><lastmod>{now}</lastmod></url>"]
@@ -188,6 +187,8 @@ def build_sitemap(articles, cfg):
               "pages/corrections.html", "pages/privacy.html", "pages/terms.html",
               "pages/sources.html"]:
         urls.append(f"  <url><loc>{base}/{p}</loc><lastmod>{now}</lastmod></url>")
+    for cat in (cats or {}):
+        urls.append(f"  <url><loc>{base}/categories/{cat_slug(cat)}.html</loc><lastmod>{now}</lastmod></url>")
     for a in articles:
         lm = (a.get("updatedAt") or a.get("publishedAt") or "")[:10] or now
         urls.append(f"  <url><loc>{base}/articles/{a['slug']}.html</loc>"
@@ -223,6 +224,89 @@ def build_rss(articles, cfg):
             + "\n".join(items) + "\n</channel>\n</rss>\n")
 
 
+def cat_slug(cat):
+    import re
+    return re.sub(r"-+", "-", re.sub(r"[^a-z0-9]+", "-", str(cat or "").lower())).strip("-")
+
+
+NAV_CATEGORIES = [
+    "Military Aviation",
+    "Naval Warfare and Maritime Security",
+    "Ground Forces and Armored Vehicles",
+    "Missiles and Air Defense",
+    "Military Drones and Robotics",
+]
+
+
+def nav_links(prefix=""):
+    items = [f'<li><a href="{prefix}index.html">Home</a></li>',
+             f'<li><a href="{prefix}index.html#latest">Latest</a></li>']
+    for c in NAV_CATEGORIES:
+        items.append(f'<li><a href="{prefix}categories/{cat_slug(c)}.html">{esc(c.split(" and ")[0].split(" Warfare")[0])}</a></li>')
+    items.append(f'<li><a href="{prefix}pages/about.html">About</a></li>')
+    return "\n".join(items)
+
+
+CATEGORY_TEMPLATE = """<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{category} — {site}</title>
+<meta name="description" content="Latest {category} news and analysis — {site}.">
+<link rel="canonical" href="{url}">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<header class="site-header"><div class="wrap header-top">
+<div><a class="logo" href="../index.html">{site_upper}</a>
+<div class="tagline">Military &middot; Defense &middot; Security</div></div>
+<button class="nav-toggle" aria-label="Toggle navigation">MENU</button>
+</div>
+<nav class="main-nav"><div class="wrap"><ul>
+{nav}
+</ul></div></nav></header>
+<main class="wrap">
+<div class="breadcrumb"><a href="../index.html">Home</a> / {category}</div>
+<section class="section"><div class="section-head">{category}</div>
+<div class="cards">{cards}</div></section>
+</main>
+<footer class="site-footer"><div class="wrap footer-bottom">
+<span>&copy; {year} {site}. All rights reserved.</span>
+</div></footer>
+<script>
+document.querySelector('.nav-toggle').addEventListener('click',function(){{
+document.querySelector('.main-nav').classList.toggle('open');}});
+document.querySelectorAll('.main-nav a').forEach(function(a){{
+a.addEventListener('click',function(){{document.querySelector('.main-nav').classList.remove('open');}});}});
+</script>
+</body>
+</html>
+"""
+
+
+def build_category_page(category, articles, cfg):
+    base = cfg["production_url"].rstrip("/")
+    slug = cat_slug(category)
+    url = f"{base}/categories/{slug}.html"
+    cards = []
+    for a in articles:
+        img = a.get("image") or "assets/img/fallback.svg"
+        img_tag = (f'<a href="../articles/{esc(a["slug"])}.html">'
+                   f'<img class="card-img" src="../{esc(img)}" alt="{esc(a["title"])}"></a>')
+        cards.append(
+            f'<article class="card">{img_tag}<div class="card-body">'
+            f'<div class="cat">{esc(a["category"])}</div>'
+            f'<h3><a href="../articles/{esc(a["slug"])}.html">{esc(a["title"])}</a></h3>'
+            f'<p>{esc(a["summary"])}</p></div></article>')
+    return CATEGORY_TEMPLATE.format(
+        category=esc(category), site=esc(cfg["site_name"]),
+        site_upper=esc(cfg["site_name"]).upper(), url=url,
+        nav=nav_links("../"), cards="".join(cards),
+        year=datetime.now(timezone.utc).year,
+    )
+
+
 def main():
     cfg = load_config()
     articles = load_articles()
@@ -233,9 +317,18 @@ def main():
         (adir / f"{a['slug']}.html").write_text(
             build_article(a, articles, cfg), encoding="utf-8")
 
-    (ROOT / "sitemap.xml").write_text(build_sitemap(articles, cfg), encoding="utf-8")
+    cdir = ROOT / "categories"
+    cdir.mkdir(exist_ok=True)
+    cats = {}
+    for a in articles:
+        cats.setdefault(a.get("category", "Uncategorized"), []).append(a)
+    for cat, items in cats.items():
+        (cdir / f"{cat_slug(cat)}.html").write_text(
+            build_category_page(cat, items, cfg), encoding="utf-8")
+
+    (ROOT / "sitemap.xml").write_text(build_sitemap(articles, cfg, cats), encoding="utf-8")
     (ROOT / "rss.xml").write_text(build_rss(articles, cfg), encoding="utf-8")
-    print(f"[build] {len(articles)} article pages, sitemap.xml, rss.xml written")
+    print(f"[build] {len(articles)} article pages, {len(cats)} category pages, sitemap.xml, rss.xml written")
 
 
 if __name__ == "__main__":
