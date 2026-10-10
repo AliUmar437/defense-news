@@ -100,10 +100,10 @@ ARTICLE_TEMPLATE = """<!DOCTYPE html>
 <section class="section"><div class="section-head">Related Articles</div>
 <div class="cards">{related}</div></section>
 </main>
-<footer class="site-footer"><div class="wrap footer-bottom">
+<footer class="site-footer"><div class="footer-bottom"><div class="wrap footer-bottom-inner">
 <span>&copy; {year} {site}. All rights reserved.</span>
-<span><a href="../pages/editorial-policy.html">Editorial Policy</a></span>
-</div></footer>
+<nav class="footer-legal"><a href="../pages/privacy.html">Privacy</a><a href="../pages/terms.html">Terms</a><a href="../pages/contact.html">Contact</a></nav>
+</div></div></footer>
 </body>
 </html>
 """
@@ -271,9 +271,10 @@ CATEGORY_TEMPLATE = """<!DOCTYPE html>
 <section class="section"><div class="section-head">{category}</div>
 <div class="cards">{cards}</div></section>
 </main>
-<footer class="site-footer"><div class="wrap footer-bottom">
+<footer class="site-footer"><div class="footer-bottom"><div class="wrap footer-bottom-inner">
 <span>&copy; {year} {site}. All rights reserved.</span>
-</div></footer>
+<nav class="footer-legal"><a href="../pages/privacy.html">Privacy</a><a href="../pages/terms.html">Terms</a><a href="../pages/contact.html">Contact</a></nav>
+</div></div></footer>
 <script>
 document.querySelector('.nav-toggle').addEventListener('click',function(){{
 document.querySelector('.main-nav').classList.toggle('open');}});
