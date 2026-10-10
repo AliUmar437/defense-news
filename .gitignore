@@ -6,3 +6,4 @@ data/raw_items.json
 data/normalized_items.json
 data/new_items.json
 data/drafts.json
+.github/workflows/
