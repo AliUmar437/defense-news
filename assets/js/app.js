@@ -80,17 +80,19 @@
   function renderFeatured(items) {
     var wrap = document.getElementById('featured');
     if (!wrap) return;
-    if (!items.length) {
+    var feats = items.filter(function (a) { return a.featured; });
+    var pool = feats.length ? feats : items.slice(0, 4);
+    var main = pool[0];
+    var side = pool.slice(1, 4);
+    if (!main) {
       wrap.innerHTML = '<div class="empty">No featured story yet. New articles will appear here automatically.</div>';
       return;
     }
-    var main = items.find(function (a) { return a.featured; }) || items[0];
-    var side = items.filter(function (a) { return a !== main; }).slice(0, 4);
     var html = '<div class="featured-main"><img src="' + imgFor(main) + '" alt="' + esc(main.imageAlt || main.title) + '">' +
       '<div class="featured-text"><span class="kicker">' + esc(main.category) + '</span>' +
       '<h1><a href="' + articleUrl(main) + '">' + esc(main.title) + '</a></h1>' +
       '<div class="meta">' + esc(fmtDate(main.publishedAt)) + ' &middot; ' + esc(main.sourceName || '') + '</div></div></div>';
-    html += '<div class="featured-side"><h3>Top Headlines</h3>' + side.map(function (a) {
+    html += '<div class="featured-side"><h3>Featured Stories</h3>' + side.map(function (a) {
       return '<div class="side-item"><a href="' + articleUrl(a) + '"><img src="' + imgFor(a) + '" alt="" loading="lazy"></a>' +
         '<div><h4><a href="' + articleUrl(a) + '">' + esc(a.title) + '</a></h4><div class="meta">' + esc(fmtDate(a.publishedAt)) + '</div></div></div>';
     }).join('') + '</div>';
@@ -161,7 +163,12 @@
     });
     var t = document.querySelector('.nav-toggle');
     var nav = document.querySelector('.main-nav');
-    if (t && nav) t.addEventListener('click', function () { nav.classList.toggle('open'); });
+    if (t && nav) {
+      t.addEventListener('click', function () { nav.classList.toggle('open'); });
+      nav.querySelectorAll('a').forEach(function (a) {
+        a.addEventListener('click', function () { nav.classList.remove('open'); });
+      });
+    }
   }
 
   function boot() {

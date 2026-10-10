@@ -55,7 +55,7 @@
    "stealth fighter",
    "NGAD"
   ],
-  "featured": false,
+  "featured": true,
   "breaking": true,
   "status": "published",
   "verificationStatus": "single-source",
@@ -86,7 +86,6 @@
    "China",
    "fighters"
   ],
-  "featured": false,
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
@@ -117,7 +116,6 @@
    "Australia",
    "cruise missile"
   ],
-  "featured": false,
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
@@ -148,7 +146,6 @@
    "Virginia-class",
    "shipbuilding"
   ],
-  "featured": false,
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
@@ -179,7 +176,6 @@
    "uncrewed",
    "hybrid fleet"
   ],
-  "featured": false,
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
@@ -210,7 +206,6 @@
    "NATO",
    "air defense"
   ],
-  "featured": false,
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
@@ -241,7 +236,6 @@
    "procurement",
    "sustainment"
   ],
-  "featured": false,
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
@@ -272,7 +266,6 @@
    "drones",
    "PERCH"
   ],
-  "featured": false,
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
@@ -303,7 +296,6 @@
    "Indo-Pacific",
    "US Army"
   ],
-  "featured": false,
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
@@ -334,7 +326,6 @@
    "sixth-generation fighter",
    "FCAS"
   ],
-  "featured": false,
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
@@ -365,7 +356,6 @@
    "drones",
    "testing"
   ],
-  "featured": false,
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
@@ -396,7 +386,6 @@
    "modernization",
    "drones"
   ],
-  "featured": false,
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
@@ -427,7 +416,6 @@
    "exercise",
    "allies"
   ],
-  "featured": false,
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
@@ -458,7 +446,6 @@
    "Pentagon",
    "networks"
   ],
-  "featured": false,
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
@@ -489,7 +476,7 @@
    "Alaska",
    "Aegis"
   ],
-  "featured": false,
+  "featured": true,
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
@@ -520,7 +507,6 @@
    "FQ-42",
    "FQ-44"
   ],
-  "featured": false,
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
@@ -551,7 +537,6 @@
    "Canada",
    "air defense"
   ],
-  "featured": false,
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
@@ -582,7 +567,7 @@
    "bomber",
    "AGM-158C"
   ],
-  "featured": false,
+  "featured": true,
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
@@ -613,7 +598,6 @@
    "fighter competition",
    "NATO"
   ],
-  "featured": false,
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
@@ -644,7 +628,6 @@
    "US Navy",
    "Shield AI"
   ],
-  "featured": false,
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
@@ -675,7 +658,6 @@
    "missiles",
    "long-range fires"
   ],
-  "featured": false,
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
@@ -706,7 +688,6 @@
    "deployments",
    "USS George H.W. Bush"
   ],
-  "featured": false,
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
@@ -737,7 +718,6 @@
    "fighters",
    "Lockheed Martin"
   ],
-  "featured": false,
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
@@ -768,7 +748,6 @@
    "Northrop Grumman",
    "USAF"
   ],
-  "featured": false,
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
@@ -799,7 +778,6 @@
    "bombers",
    "Operation Epic Fury"
   ],
-  "featured": false,
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
@@ -830,7 +808,6 @@
    "surveillance",
    "maritime"
   ],
-  "featured": false,
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
@@ -861,7 +838,6 @@
    "missile defense",
    "interceptor"
   ],
-  "featured": false,
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
@@ -892,7 +868,6 @@
    "artillery",
    "US Army"
   ],
-  "featured": false,
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
@@ -923,7 +898,6 @@
    "US Army",
    "border"
   ],
-  "featured": false,
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
@@ -954,7 +928,6 @@
    "helicopters",
    "US Army"
   ],
-  "featured": false,
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
@@ -985,7 +958,6 @@
    "sonobuoy",
    "anti-submarine"
   ],
-  "featured": false,
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
@@ -1016,7 +988,6 @@
    "rescue",
    "unmanned"
   ],
-  "featured": false,
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
@@ -1047,7 +1018,6 @@
    "SOUTHCOM",
    "border security"
   ],
-  "featured": false,
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
@@ -1078,7 +1048,6 @@
    "milestone",
    "naval aviation"
   ],
-  "featured": false,
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
@@ -1109,7 +1078,6 @@
    "training",
    "Air National Guard"
   ],
-  "featured": false,
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
@@ -1140,7 +1108,6 @@
    "Super Hornet",
    "air-to-air missile"
   ],
-  "featured": false,
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
@@ -1171,7 +1138,6 @@
    "air defense",
    "Russia"
   ],
-  "featured": false,
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
@@ -1202,7 +1168,6 @@
    "Iran",
    "munitions"
   ],
-  "featured": false,
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",
@@ -1233,7 +1198,6 @@
    "IRIS-T",
    "naval"
   ],
-  "featured": false,
   "breaking": false,
   "status": "published",
   "verificationStatus": "single-source",

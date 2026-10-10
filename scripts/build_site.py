@@ -55,7 +55,7 @@ def related_for(article, all_articles, n=3):
         score += len(set(other.get("tags", [])) & set(article.get("tags", [])))
         if score:
             scored.append((score, other))
-    scored.sort(key=lambda x: x[0], reverse=True)
+    scored.sort(key=lambda x: (x[0], x[1].get("publishedAt", "")), reverse=True)
     return [o for _, o in scored[:n]]
 
 
