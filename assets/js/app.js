@@ -118,6 +118,10 @@
     if (count) count.textContent = list.length + ' article' + (list.length === 1 ? '' : 's');
   }
 
+  function catId(cat) {
+    return 'cat-' + String(cat).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  }
+
   function renderCategorySections(items) {
     var wrap = document.getElementById('category-sections');
     if (!wrap) return;
@@ -129,7 +133,7 @@
     picks.forEach(function (cat) {
       var list = items.filter(function (a) { return a.category === cat; }).slice(0, 3);
       if (!list.length) return; // never show invented/empty category blocks
-      html += '<section class="section"><div class="section-head">' + esc(cat) + '</div>' +
+      html += '<section class="section" id="' + catId(cat) + '"><div class="section-head">' + esc(cat) + '</div>' +
         '<div class="cards">' + list.map(cardHtml).join('') + '</div></section>';
     });
     wrap.innerHTML = html;
