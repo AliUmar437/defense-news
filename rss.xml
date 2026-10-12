@@ -6,6 +6,22 @@
   <description>Timely, source-attributed coverage of global military developments, defense technology, and international security.</description>
   <language>en</language>
   <item>
+    <title>Anduril Unveils Steelfin, a Modular Family of Affordable Interceptors for Drone, Cruise and Hypersonic Threats</title>
+    <link>https://defense-news.github.io/defense-news/articles/anduril-unveils-steelfin-modular-interceptor-family.html</link>
+    <guid>https://defense-news.github.io/defense-news/articles/anduril-unveils-steelfin-modular-interceptor-family.html</guid>
+    <description>Anduril unveiled Steelfin, a family of two-stage surface-to-air interceptors aimed at cruise, ballistic and hypersonic missiles, pitched at a fraction of the cost of today's interceptors with production scaled to thousands of rounds a year.</description>
+    <pubDate>Mon, 12 Oct 2026 12:40:55 +0000</pubDate>
+    <category>Missiles and Air Defense</category>
+  </item>
+  <item>
+    <title>Airbus Flies Kratos Valkyrie Drone in Europe for the First Time, Targets 2029 Eurofighter Wingman</title>
+    <link>https://defense-news.github.io/defense-news/articles/airbus-valkyrie-first-test-flight-europe.html</link>
+    <guid>https://defense-news.github.io/defense-news/articles/airbus-valkyrie-first-test-flight-europe.html</guid>
+    <description>Airbus carried out the first European test flight of the Kratos-built Valkyrie combat drone it hopes to team with Eurofighters, flying the rocket-launched aircraft to Mach 0.8 with a combat-ready wingman targeted for 2029.</description>
+    <pubDate>Mon, 12 Oct 2026 12:40:55 +0000</pubDate>
+    <category>Military Drones and Robotics</category>
+  </item>
+  <item>
     <title>South Korea Tests First Homegrown Hypersonic Glide Vehicle</title>
     <link>https://defense-news.github.io/defense-news/articles/south-korea-first-hypersonic-glide-vehicle-test.html</link>
     <guid>https://defense-news.github.io/defense-news/articles/south-korea-first-hypersonic-glide-vehicle-test.html</guid>
@@ -228,22 +244,6 @@
     <description>Germany is arming its 7,200-ton F125 frigates with IRIS-T SLM surface-to-air missiles, addressing their notoriously light armament.</description>
     <pubDate>Fri, 02 Oct 2026 21:01:32 +0000</pubDate>
     <category>Naval Warfare and Maritime Security</category>
-  </item>
-  <item>
-    <title>Taiwan's First F-16 Block 70 Fighters Finally Arrive</title>
-    <link>https://defense-news.github.io/defense-news/articles/taiwan-first-f16-block-70-arrive.html</link>
-    <guid>https://defense-news.github.io/defense-news/articles/taiwan-first-f16-block-70-arrive.html</guid>
-    <description>Taiwan has taken delivery of its first two new F-16 Block 70 fighters, kicking off a long-awaited fleet expansion as pressure from mainland China grows.</description>
-    <pubDate>Fri, 02 Oct 2026 16:34:04 +0000</pubDate>
-    <category>Military Aviation</category>
-  </item>
-  <item>
-    <title>Secretive AIM-260 Missile Spotted on Australian Super Hornet</title>
-    <link>https://defense-news.github.io/defense-news/articles/aim260-jatm-australian-super-hornet.html</link>
-    <guid>https://defense-news.github.io/defense-news/articles/aim260-jatm-australian-super-hornet.html</guid>
-    <description>The long-range AIM-260 air-to-air missile has been photographed on an Australian F/A-18F Super Hornet, promising a major reach boost against Chinese threats.</description>
-    <pubDate>Thu, 01 Oct 2026 17:01:18 +0000</pubDate>
-    <category>Missiles and Air Defense</category>
   </item>
 </channel>
 </rss>
