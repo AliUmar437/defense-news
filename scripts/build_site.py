@@ -76,6 +76,7 @@ ARTICLE_TEMPLATE = """<!DOCTYPE html>
 <meta property="article:section" content="{category}">
 <link rel="stylesheet" href="../assets/css/style.css">
 <script type="application/ld+json">{jsonld}</script>
+{ga_tag}
 </head>
 <body>
 <header class="site-header"><div class="wrap header-top">
@@ -175,6 +176,7 @@ body=md_to_html(article.get("content")),
         tags="".join(f'<span class="tag">{esc(t)}</span>' for t in article.get("tags", [])),
         related=related, year=datetime.now(timezone.utc).year,
         jsonld=jsonld.replace("</", "<\\/"),
+        ga_tag=ga_tag(cfg),
         nav=nav_links("../"),
     )
 
@@ -224,6 +226,21 @@ def build_rss(articles, cfg):
             + "\n".join(items) + "\n</channel>\n</rss>\n")
 
 
+
+def ga_tag(cfg):
+    gid = cfg.get("ga4_measurement_id", "")
+    if not gid:
+        return ""
+    return ("""<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=""" + gid + """"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '""" + gid + """');
+</script>""")
+
+
 def cat_slug(cat):
     import re
     return re.sub(r"-+", "-", re.sub(r"[^a-z0-9]+", "-", str(cat or "").lower())).strip("-")
@@ -256,6 +273,7 @@ CATEGORY_TEMPLATE = """<!DOCTYPE html>
 <meta name="description" content="Latest {category} news and analysis — {site}.">
 <link rel="canonical" href="{url}">
 <link rel="stylesheet" href="../assets/css/style.css">
+{ga_tag}
 </head>
 <body>
 <header class="site-header"><div class="wrap header-top">
@@ -304,6 +322,7 @@ def build_category_page(category, articles, cfg):
         category=esc(category), site=esc(cfg["site_name"]),
         site_upper=esc(cfg["site_name"]).upper(), url=url,
         nav=nav_links("../"), cards="".join(cards),
+        ga_tag=ga_tag(cfg),
         year=datetime.now(timezone.utc).year,
     )
 

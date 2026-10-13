@@ -4,5 +4,6 @@
  "production_url": "https://defense-news.github.io/defense-news",
  "site_name": "Defense News",
  "tagline": "International military, defense, and security news",
- "timezone": "UTC"
+ "timezone": "UTC",
+ "ga4_measurement_id": "G-Z62B0ES7R5"
 }
