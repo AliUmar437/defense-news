@@ -1410,5 +1410,89 @@
     "publishedAt": "2026-10-12T12:40:55Z",
     "updatedAt": "2026-10-12T12:40:55Z",
     "collectedAt": "2026-10-12T12:40:55Z"
+  },
+  {
+    "id": "n0045",
+    "title": "Sikorsky Packs Four Nomad 100 Drones Into One Shipping Container for Rapid Combat Deployment",
+    "slug": "sikorsky-nomad-100-fast-pack",
+    "category": "Military Drones and Robotics",
+    "region": "North America",
+    "summary": "Sikorsky unveiled the Nomad 100 Fast Pack at the Army's annual conference: a standard 20-foot container holding four VTOL combat drones and everything needed to fly them, with two aircraft mission-ready in under 15 minutes.",
+    "content": "WASHINGTON - Sikorsky has packed a small drone air force into a shipping container.\n\nThe Lockheed Martin subsidiary introduced the Nomad 100 Fast Pack on Monday, a containerized vertical-takeoff-and-landing uncrewed aircraft kit unveiled as the Association of the U.S. Army's annual conference opened in Washington. A single standard 20-foot ISO container holds four Nomad 100 drones along with the mission-command software, power, communications and sustainment equipment needed to fly them - a complete expeditionary drone detachment that fits on the back of a truck.\n\n## Ready in minutes, no runway needed\n\nThe headline figure is speed. Sikorsky says that in its planned configuration, two of the four aircraft can be mission ready in less than 15 minutes, with the other two available within four to six hours. The system launches without a runway, from sites such as naval vessels, tactical vehicle staging areas and improvised landing zones. After a mission, crews can repack the container, load it onto a compatible vehicle and move to a new site.\n\nDepending on how a customer configures it, the kit can run intelligence, surveillance, reconnaissance and targeting missions, along with light attack and contested logistics - the expeditionary ISR-T, strike and multirole portfolio the Pentagon has been urging industry to scale up.\n\n\"Military leaders are challenging industry to expand the inventory of uncrewed aircraft, and Sikorsky is delivering proven autonomous air capability with speed and scale, offering field-ready solutions to deploy and sustain those systems where they are needed most,\" Rich Benton, Sikorsky's vice president and general manager, said in the company's announcement.\n\n## A proven airframe in new packaging\n\nThe aircraft inside the container is not a clean-sheet design. The Nomad 100, with an 18-foot wingspan, is a Group 3 uncrewed aircraft under Pentagon classification, built around Sikorsky's rotor-blown-wing design - helicopter-style vertical lift and hover paired with the speed, range and endurance of a fixed-wing aircraft - and flown with the company's MATRIX autonomy software. It completed initial ground and flight testing in July as part of DARPA's Evade demonstration, Aviation Week reported, and is a larger sibling of the Nomad 50, which first flew in March 2025.\n\nSikorsky has not disclosed the Nomad 100's payload, range or endurance, Military Times noted - a deliberate gap that keeps the focus on what the company is really selling here. It is not pitching the airframe; it is pitching the logistics wrapper.\n\n## Why it matters\n\nThe Fast Pack is a bet that the Pentagon's drone problem is no longer about building better aircraft - it is about getting good-enough aircraft forward fast. Two years of watching uncrewed systems in Ukraine, the Red Sea and now the war with Iran have taught the U.S. military that runway-dependent drone bases are fragile and that repositioning speed matters as much as payload. A containerized kit that arrives with its own command, power and sustainment gear is designed for exactly that lesson.\n\nThe naval angle is worth watching. The system is explicitly designed to launch from ships, which makes the Fast Pack a cross-service product rather than an Army-only one - a notable hedge at a time when the services are competing for drone funding. Group 3 is also a deliberate choice: large enough to carry real ISR and light-attack payloads, small enough to deploy by the handful.\n\nWhat to watch: whether the Army - or the Navy - converts the AUSA pitch into actual procurement. Sikorsky has not named a customer, a price or a delivery timeline, and containerized drone kits from other vendors have struggled to move from conference-floor concept to program of record. The next sign of traction will be a military unit or service acquisition office signing for the first kit.\n",
+    "image": "assets/img/articles/sikorsky-nomad-100-fast-pack.jpg",
+    "imageAlt": "Sikorsky Nomad drones on display",
+    "imageCredit": "Army Recognition",
+    "imageCreditUrl": "https://www.armyrecognition.com/archives/archives-land-defense/defense-news-army-2025/lockheeds-sikorsky-reveals-nomad-drones-for-u-s-army-future-combat",
+    "sourceName": "Lockheed Martin",
+    "sourceUrl": "https://news.lockheedmartin.com/2026-10-12-Sikorsky-Introduces-Nomad-TM-100-Fast-Pack,-a-Containerized-VTOL-UAS-Kit-for-Rapid-Deployment-in-Austere-Environments",
+    "additionalSources": [
+      {
+        "name": "Aviation Week",
+        "url": "https://aviationweek.com/defense/aircraft-propulsion/sikorsky-unveils-containerized-nomad-100-vtol-uas-system"
+      },
+      {
+        "name": "Military Times",
+        "url": "https://www.militarytimes.com/industry/techwatch/2026/10/12/sikorsky-packs-4-nomad-drones-into-a-single-shipping-container/"
+      }
+    ],
+    "author": "Robert Hayes",
+    "tags": [
+      "Sikorsky",
+      "Nomad 100",
+      "drones",
+      "Lockheed Martin",
+      "AUSA",
+      "VTOL"
+    ],
+    "featured": false,
+    "breaking": false,
+    "status": "published",
+    "verificationStatus": "multi-source",
+    "contentType": "news",
+    "publishedAt": "2026-10-13T12:39:48Z",
+    "updatedAt": "2026-10-13T12:39:48Z",
+    "collectedAt": "2026-10-13T12:39:48Z"
+  },
+  {
+    "id": "n0046",
+    "title": "Lockheed Unveils PAC-3 Edge, Its Bid for the Army's Future Patriot Interceptor",
+    "slug": "lockheed-pac3-edge-future-interceptor",
+    "category": "Missiles and Air Defense",
+    "region": "North America",
+    "summary": "Lockheed Martin revealed the PAC-3 Edge, a next-generation Patriot interceptor with a new seeker and rocket motor that promises longer range and higher-altitude kills at roughly the cost of the current PAC-3 MSE.",
+    "content": "WASHINGTON - Lockheed Martin has pulled the wraps off its bid to give the Army a next-generation Patriot interceptor - and its pitch is as much about the price tag as the technology.\n\nThe PAC-3 Edge, unveiled ahead of the Association of the U.S. Army's annual conference, is Lockheed's offering for the Army's Future Interceptor program, a competition to develop a follow-on to the current PAC-3 Missile Segment Enhancement (MSE) interceptor. Tim Cahill, president of Lockheed's missiles and fire control unit, told Breaking Defense that the company was one of two firms selected to advance in the program. He declined to name the other competitor, and the Army did not respond to a request for more information.\n\n## New seeker, new motor\n\nThe Edge builds on the battle-tested PAC-3 MSE. Three upgrades define it: a new company-built seeker, upgraded flight controls, and a multi-pulse solid rocket motor designed by Northrop Grumman. Lockheed says the combination extends the interceptor's reach to higher altitudes and longer ranges, with better sensitivity to pick up difficult targets and better maneuverability to chase them.\n\n\"PAC-3 Edge is designed to go after the most stressing targets that we - and, more importantly, that the Department of War - believes are the next-generation threats that they are going to be seeing in the fight from our adversaries,\" Cahill said in an interview with Breaking Defense, referring to the Pentagon by its new secondary name.\n\n\"PAC-3 Edge will be longer ranged. It will be higher altitude. It will be more capable to take on targets that are trying to hide,\" he added. \"It will have greater sensitivity in its seeker. It will have greater capability to maneuver and to respond to threats.\"\n\nThe seeker is built at Lockheed's Strigo Product Center, backed by $250 million in company investment. Cahill said $50 million to $100 million or more has already been spent on the missile, with hundreds of millions more planned, and Lockheed is displaying a full-scale model at the AUSA conference.\n\n## A price-driven pitch\n\nThe sharpest part of the sales pitch is cost. \"The cost of this would be about that of the existing PAC-3 MSE,\" Cahill told Reuters - roughly $4 million per missile, according to Military Times - removing the exact objection that sank the Army's last attempt at a next-generation Patriot interceptor. Army leaders scrapped that earlier effort in 2024, calling it \"very expensive,\" Breaking Defense reported, before reviving the requirement as the Future Interceptor program.\n\nThe timeline is aggressive but framed as company-backed development rather than a Pentagon research effort: test flights targeted for 2027 and residual operational capability by 2031, goals Cahill tied to Lockheed's internal funding. At full production, Cahill told Reuters, output could reach about 2,000 missiles a year - matching the rate the Pentagon agreed in January to lift PAC-3 production toward.\n\n## Why it matters\n\nThe PAC-3 Edge is the clearest sign yet of how the Pentagon's missile-defense buying has changed. A year ago the pattern was familiar: a new interceptor grew expensive, the Army canceled it, and the requirement died. Now the requirement is back - but only with a contractor willing to build the better missile at the same price and fund the early development itself. That is not Lockheed being generous; it is the industry reading the current Pentagon's demand for cheaper, faster, contractor-invested development.\n\nThe unveiling lands amid the biggest interceptor production wave in recent memory. Days earlier the Pentagon awarded Raytheon up to $6.3 billion to keep building SM-3 Block IB interceptors through 2034, and last month Lockheed landed a potential $20.7 billion AMRAAM deal. Across every layer, Washington is signing multiyear deals to lock in production, restock arsenals drawn down by Ukraine and Middle East conflicts, and feed the Golden Dome homeland defense initiative.\n\nWhat to watch: the identity of the second Future Interceptor competitor, which will say a lot about the Army's tolerance for risk; whether the 2027 test schedule holds, since it underpins the entire company-funded model; and the funding ramp the program is slated to receive beginning in fiscal year 2028 - the moment this stops being Lockheed's pitch and becomes the Pentagon's commitment.\n",
+    "image": "assets/img/articles/lockheed-pac3-edge-future-interceptor.jpg",
+    "imageAlt": "PAC-3 MSE interceptors during a test launch",
+    "imageCredit": "Army Recognition",
+    "imageCreditUrl": "https://www.armyrecognition.com/news/army-news/2026/u-s-army-awards-4-76b-pac-3-mse-contract-as-allies-fund-patriot-missile-surge",
+    "sourceName": "Breaking Defense",
+    "sourceUrl": "https://breakingdefense.com/2026/10/lockheed-unveils-pac-3-edge-its-next-gen-patriot-interceptor/",
+    "additionalSources": [
+      {
+        "name": "Reuters via The Street",
+        "url": "https://www.thestreet.com/investing/lockheed-pac-3-edge-missile-defense"
+      },
+      {
+        "name": "AD HOC NEWS",
+        "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/lockheed-martin-debuts-pac-3-edge-as-ubs-targets-lockheed-martin-stock-at/70299828"
+      }
+    ],
+    "author": "James Carter",
+    "tags": [
+      "Lockheed Martin",
+      "PAC-3 Edge",
+      "Patriot",
+      "Future Interceptor",
+      "air defense",
+      "Army"
+    ],
+    "featured": false,
+    "breaking": false,
+    "status": "published",
+    "verificationStatus": "multi-source",
+    "contentType": "news",
+    "publishedAt": "2026-10-13T12:39:48Z",
+    "updatedAt": "2026-10-13T12:39:48Z",
+    "collectedAt": "2026-10-13T12:39:48Z"
   }
 ]

@@ -6,6 +6,22 @@
   <description>Timely, source-attributed coverage of global military developments, defense technology, and international security.</description>
   <language>en</language>
   <item>
+    <title>Sikorsky Packs Four Nomad 100 Drones Into One Shipping Container for Rapid Combat Deployment</title>
+    <link>https://defense-news.github.io/defense-news/articles/sikorsky-nomad-100-fast-pack.html</link>
+    <guid>https://defense-news.github.io/defense-news/articles/sikorsky-nomad-100-fast-pack.html</guid>
+    <description>Sikorsky unveiled the Nomad 100 Fast Pack at the Army's annual conference: a standard 20-foot container holding four VTOL combat drones and everything needed to fly them, with two aircraft mission-ready in under 15 minutes.</description>
+    <pubDate>Tue, 13 Oct 2026 12:39:48 +0000</pubDate>
+    <category>Military Drones and Robotics</category>
+  </item>
+  <item>
+    <title>Lockheed Unveils PAC-3 Edge, Its Bid for the Army's Future Patriot Interceptor</title>
+    <link>https://defense-news.github.io/defense-news/articles/lockheed-pac3-edge-future-interceptor.html</link>
+    <guid>https://defense-news.github.io/defense-news/articles/lockheed-pac3-edge-future-interceptor.html</guid>
+    <description>Lockheed Martin revealed the PAC-3 Edge, a next-generation Patriot interceptor with a new seeker and rocket motor that promises longer range and higher-altitude kills at roughly the cost of the current PAC-3 MSE.</description>
+    <pubDate>Tue, 13 Oct 2026 12:39:48 +0000</pubDate>
+    <category>Missiles and Air Defense</category>
+  </item>
+  <item>
     <title>Anduril Unveils Steelfin, a Modular Family of Affordable Interceptors for Drone, Cruise and Hypersonic Threats</title>
     <link>https://defense-news.github.io/defense-news/articles/anduril-unveils-steelfin-modular-interceptor-family.html</link>
     <guid>https://defense-news.github.io/defense-news/articles/anduril-unveils-steelfin-modular-interceptor-family.html</guid>
@@ -228,22 +244,6 @@
     <description>Northrop Grumman's Talon Blue has flown, staking its claim in the Air Force's Collaborative Combat Aircraft competition.</description>
     <pubDate>Sat, 03 Oct 2026 18:31:31 +0000</pubDate>
     <category>Military Drones and Robotics</category>
-  </item>
-  <item>
-    <title>One Navy Squadron's Staggering Weapons Bill from the War with Iran</title>
-    <link>https://defense-news.github.io/defense-news/articles/vfa41-epic-fury-weapons-expended.html</link>
-    <guid>https://defense-news.github.io/defense-news/articles/vfa41-epic-fury-weapons-expended.html</guid>
-    <description>A single Navy fighter squadron — VFA-41 — expended hundreds of air-to-air and air-to-surface weapons during Operation Epic Fury against Iran.</description>
-    <pubDate>Fri, 02 Oct 2026 22:49:31 +0000</pubDate>
-    <category>Military Aviation</category>
-  </item>
-  <item>
-    <title>Germany Finally Gives Its F125 Frigates Real Teeth with IRIS-T Missiles</title>
-    <link>https://defense-news.github.io/defense-news/articles/germany-f125-frigates-iris-t-missiles.html</link>
-    <guid>https://defense-news.github.io/defense-news/articles/germany-f125-frigates-iris-t-missiles.html</guid>
-    <description>Germany is arming its 7,200-ton F125 frigates with IRIS-T SLM surface-to-air missiles, addressing their notoriously light armament.</description>
-    <pubDate>Fri, 02 Oct 2026 21:01:32 +0000</pubDate>
-    <category>Naval Warfare and Maritime Security</category>
   </item>
 </channel>
 </rss>
